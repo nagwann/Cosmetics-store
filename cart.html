@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="./style/header_style.css" />
+  <link rel="stylesheet" href="./style/cart_style.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
+
+  <style>
+ 
+  </style>
+</head>
+
+<body>
+ <header class="navs">
+    <div class="nav1">
+      <p>FREE SHIPPING ON U.S. O</p>
+    </div>
+    <div class="nav2">
+      <div class="logo">
+        <img src="./image/-removebg-preview.png" alt="Logo" />
+      </div>
+      <nav class="links">
+        <a href="./home.html">HOME</a>
+        <a href="./shop.html">SHOP</a>
+        <a href="./about_us.html">ABOUT US</a>
+        <a href="./contact_us.html">CONTACT US</a>
+      </nav>
+      <div class="btn">
+        <a href="./login.html"><i class="fa-solid fa-right-to-bracket"></i></a>
+        <a href="./profile.html"><i class="fa fa-light fa-user"></i></a>
+        <a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+      </div>
+      <div class="menu">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+  </header>
+  <div class="contener">
+    <table id="cart-items" class="items">
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Name</th>
+          <th>Quantity</th>
+          <th>Price</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Items will be inserted here -->
+      </tbody>
+    </table>
+
+    <div class="summary">
+      <p>Subtotal:  <span id="subtotal">$0.00</span></p>
+      <p>Tax (14%): <span id="tax">$0.00</span></p>
+      <p>Total: <span id="total">$0.00</span></p>
+    </div>
+  </div>
+
+
+
+<script src="./js/cart- logic.js"></script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Background Video with Header and Link</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            font-size: 36px;
+            /* z-index: 1; */
+        }
+        a{
+            text-decoration: none;
+        }
+        h3{
+            padding: 5px;
+            border: 1px solid white;
+            border-radius: 45px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <video autoplay muted loop>
+        <source src="image/background_video.webm" type="video/mp4">
+    </video>
+
+    <div class="content">
+        
+        <a href="home.html"><h3>Vanilla Store</h3></a>
+    </div>
+</body>
+</html>

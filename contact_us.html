@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vanilla store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="./style/header_style.css">
+    <link href="./style/contactusStyle.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="navs">
+        <div class="nav1">
+            <p>FREE SHIPPING ON U.S. O</p>
+        </div>
+        <div class="nav2">
+            <div class="logo">
+                <img src="./image/-removebg-preview.png" alt="">
+            </div>
+            <div class="links">
+                <a  href="./home.html" >HOME</a>
+                <a href="./shop.html" >SHOP</a>
+                <a href="./about_us.html">ABOUT US</a>
+                <a href="./contact_us.html">CONTACT US</a>
+            </div>
+            <div class="btn">
+                <a href="./login.html"><i class="fa-solid fa-right-to-bracket"></i> </a>
+                <a href="./profile.html"> <i class="fa fa-light fa-user"></i></a>
+                <a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+
+            </div>
+            <div class="menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- srart new section -->
+    <div class="all">
+        <div class="new">
+        <h3 class="con">contact us</h3>
+           <p class="p"> our favourite girls,<br> we are waiting for you to contact us at all times</p> </div>
+            <img src="./image/gilr removebg-preview.png" class="girl">
+         </div>
+         <!-- end new section -->
+        
+            <!--start section one cotact us -->
+        <div class="container">
+        <div class="shats">
+            <img src="./image/shats-removebg-preview.png" class="img">
+            <h3>Let's have a chat !</h3>
+            <h5 style="color: gray;">Telephone: (123)456-7890</h5>
+            <h5 style="color: gray;">Fax:(123)456-789</h5>
+            <h4><a href="#" class="a"> INFO@DEMOLINK.ORG <hr
+                class="hr"></a></h4>
+        </div>
+        <div class="shats">
+            <img src="./image/location-removebg-preview.png" class="img">
+            <h3>visit our location</h3>
+            <h5 style="color: gray;">25 New street., Aswan, NS 2345</h5>
+            <h4><a href="#" class="a"> GET DIRCTIONS <hr class="hr"></a></h4>
+        </div>
+        <div class="shats">
+            <img src="./image/job-removebg-preview.png" class="img">
+            <h3>looking for a job?</h3>
+            <h5 style="color: gray;">Send Us Your CV Or See Our Opening</h5>
+            <h4><a href="#" class="a" >INFO@DEMOLINK.ORG <hr class="hr"></a></h4>
+        
+        </div>
+        </div>
+        <!-- end section one contact us -->
+        
+        <!-- srart section two contct us -->
+            <h1 class="cotact">CONTACT US</h1>
+        <div>
+         <form class="form">
+    NAME:<br>
+    <input type="text" id="name" class="text">
+    EMAIL:<br>
+    <input type="email" id="email" class="email">
+    PASSWORD:<br>
+    <input type="password" id="password" class="password">
+    PHONE:<br>
+    <input type="tel" id="phone" class="phone">
+    MESSAGE:<br>
+    <input type="text" class="massage">
+    <button type="button" class="submit" onclick="savedata()">SUBMIT</button>
+</form>
+
+         </div>
+         <!-- end section two contact us -->
+
+
+         <!-- start footer -->
+         <div class="footer">
+            <hr>
+            
+                <div class="top">
+                    <div class="flex">
+                        <div class="prt1">
+                            <img src="./image/logo-removebg-preview.png" alt="" width="150">
+                            <div class="icons">
+                              <a href="https://web.facebook.com/vanilla.2002/?locale=ar_AR"><i class="fab fa-facebook-f"></i></a>  
+                              <a href="">  <i class="fa-brands fa-twitter"></i></a>
+                              <a href="">  <i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                            <P> Copyright © 2024 by<br> NTI,
+                                Aswan Branch.</P>
+                        </div>
+                        <div class="prt2">
+                            <h3>ABOUT US</h3><br><br>
+                            <p>Creating an online store that has<br> everything a girl might need for the <br>daily
+                                skincare
+                                routine
+                                is not
+                                an easy<br> feat. First thing, you'll need to have a<br> great team to accomplish that,
+                                just
+                                as<br>
+                                well as
+                                awesome pricing policy &<br> huge range of top-quality items!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="buttom">
+                    <div class="flex">
+                        <div class="prt3">
+                            <h3>CATEGORIES</h3><br><br>
+                            <a>About Vanilla</a><br><br>
+                            <a>For Business</a><br><br>
+                            <a>Cosmetics</a><br><br>
+                            <a>Careers</a><br><br>
+                        </div>
+                        <div class="prt4">
+                            <h3>INFO</h3><br><br>
+                            <a>SHOP</a><br><br>
+                            <a>Home</a><br><br>
+                            <a>ABOUT US</a><br><br>
+                            <a>CONTACT US</a><br><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+         <script>
+            // start register contact us
+           function savedata() {
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let password = document.getElementById("password").value;
+    let phone = document.getElementById("phone").value;
+    let message = document.querySelector(".massage").value;
+
+    let users_arr = JSON.parse(localStorage.getItem("users")) || [];
+
+    if (users_arr.some((v) => v.email === email)) {
+        alert("Duplicate Data");
+    } else {
+        users_arr.push({ name, email, password, phone, message });
+        localStorage.setItem("users", JSON.stringify(users_arr));
+        alert("Your message has been sent successfully!");
+    }
+}
+
+            // end register contact us
+         </script>
+        </body>
+        </html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="./style/header_style.css">
+    <link rel="stylesheet" href="./style/login_style.css">
+</head>
+
+<body>
+
+    <!-- start header -->
+    <div class="navs">
+        <div class="nav1">
+            <p>FREE SHIPPING ON U.S. O</p>
+        </div>
+        <div class="nav2">
+            <div class="logo" style="width: 100%; display: flex; justify-content: center; align-items: center;">
+                <img src="./image/-removebg-preview.png" alt="" >
+            </div>
+          
+        </div>
+    </div>
+    <!-- end header -->
+
+    <!-- start login section -->
+    <div class="login_section">
+        <div class="login_form">
+            <ul>
+                <li id="loginBtn">LOGIN</li>
+                <li id="signupBtn">SIGN UP</li>
+            </ul>
+
+            <!-- Login form -->
+            <form id="Loginform">
+                <div class="form-control">
+                    <input type="text" required placeholder="Email" id="loginEmail">
+                </div>
+                <div class="form-control">
+                    <input type="password" required placeholder="Password" id="loginPassword">
+                </div>
+                <button type="button" onclick="loginUser()">LOGIN</button>
+            </form>
+
+            <!-- Signup form -->
+            <form id="signupForm" style="display: none;">
+                <div class="form-control">
+                    <input type="text" required placeholder="Email or phone number" id="signupEmail">
+                </div>
+                <div class="form-control">
+                    <input type="text" required placeholder="User name" id="signupName">
+                </div>
+                <div class="form-control">
+                    <input type="password" required placeholder="Password" id="signupPassword">
+                </div>
+                <button type="button" onclick="signupUser()">SIGN UP</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- JS -->
+   <script src="./js/registration.js"></script>
+</body>
+</html>

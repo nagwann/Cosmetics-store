@@ -1,0 +1,236 @@
+ /* srart style new section */
+ 
+*{
+  font-family: "Rubik", sans-serif;
+
+}.all{
+    width: 100%;
+    height: 530px;
+    display: flex;
+    align-items: center;
+    background-color: #FFB3C3;
+    margin-bottom: 30px;
+    padding-top: 20px;
+
+   
+ }
+ .new{
+    font-size: 40px;
+    margin-left: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    text-transform: capitalize;
+ }
+ .con{
+    text-transform: uppercase;
+    margin-bottom: 100px;
+    color:  rgb(206, 99, 109);
+ }
+ .p{
+    font-size: 35px;
+    color: rgb(118, 111, 111);
+
+ }
+ .girl{
+    width: 650px;
+    height: 530px;
+  margin-right: 50px;
+ }
+
+ /* end style new section */
+ 
+ /* start style section one contact us */
+ .container{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    gap: 50px;
+    text-transform: uppercase;
+
+}
+.con{
+margin-bottom: 20px;
+}
+
+.shats{
+width: 200px;
+height:250px ;
+
+text-align: center;
+border-radius: 110px;
+padding:60px ;
+box-shadow: 0 4px 6px  rgb(191, 103, 118);;
+margin-top: 30px;
+font-size: 15px;
+line-height: 33px;
+
+
+}
+.shats img{
+    width: 100px;
+    margin-bottom: 2px;
+}
+
+
+.hr{
+    color:  rgb(183, 90, 99);;
+    font-size: 20px;
+    height: 2px;
+    width: 200px;
+    background-color: #D88090;
+    margin-top: 10px;
+}
+
+.a{
+    text-decoration: none;
+    color: rgb(97, 88, 88);
+    margin-top: 5px;
+}
+
+a:hover{
+    color: rgb(206, 99, 109) ;
+    transition: .5s;
+
+}
+
+/* end style section one contact us */
+
+/* start style section two contact us  */
+
+.cotact{
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 20px;
+
+
+}
+.cotact:hover{
+    color: rgb(206, 99, 109);
+    transition: .5s;
+
+}
+.form{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+   /* text-align:center; */
+    transform: translate(500px);
+    
+
+}
+.text,.email, .password, .phone{
+    height: 40px;
+    width: 500px;
+    border-radius: 30px;
+    border-color:rgb(206, 99, 109);
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    /* align-self: center; */
+  
+}
+.massage{
+    height: 100px;
+    width: 500px;
+    border-radius: 30px;
+    border-color:rgb(206, 99, 109) ;
+    margin-bottom:15px ;
+    /* align-self: center;/ */
+
+}
+.submit{
+    height: 60px;
+    width: 120px;
+    border-radius: 30px;
+    background-color: rgb(45, 48, 56);
+    color:rgb(206, 99, 109) ;
+    text-transform: uppercase;
+    transform: translate(200px);
+    margin-bottom: 10px;
+
+}
+.submit:hover{
+    color: white;
+    background-color:  rgb(206, 99, 109);
+    transition: .5s;
+
+}
+
+
+/* end style section two contact us */
+
+@media (max-width:768px) {
+    .container{
+       flex-wrap: wrap;
+       margin-bottom: 210%;
+    }
+
+    .shats{
+        width: 250px;
+        margin-left: 20px;
+        height: 300px;
+        line-height: 40px;
+
+        
+
+    }
+    .hr{
+        transform: translate(20px);
+    }
+
+    .form{
+        transform: translate(70px);
+        font-size: 15px;
+        
+            }
+            .text,.email, .password, .phone{
+                width: 400px;
+                margin-left: 28px;
+            }
+            
+            .massage{
+                width: 403px;
+                margin-left: 27px;
+                height: 90px;
+
+            }
+            .submit{
+                width: 100px;
+                margin-right: 40px;
+            }
+
+            .all{
+                width: 800px;
+                display: flex;
+            background-image: start;
+               
+
+            
+            }
+            .new{
+            
+
+                font-size: 30px;
+                display: flex;
+                flex-direction: column;
+            
+            
+            }
+            .girl{
+                display: flex;
+                flex-direction: column;
+                /* flex-wrap: wrap; */
+                max-width: 100%;
+                transform: translate(-270px);
+            }
+            .con{
+                font-size: 30px;
+                margin-bottom: 5px;
+            }
+            .p{
+                font-size: 25px;
+        
+            }
+        }

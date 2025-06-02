@@ -1,0 +1,321 @@
+* {
+    font-family: "Rubik", sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    color: white;
+}
+
+/* section 1 */
+.shop {
+    height: 80px;
+    padding: 0 150px;
+}
+
+.newsection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+#girl_img {
+    margin-top: 40px;
+    border-radius: 90px;
+    width: 650px;
+    height: 650px;
+    z-index: 0;
+}
+
+.left img {
+    margin-top: 120%;
+    height: 350px;
+}
+
+/* section 2 */
+.shop_section2 {
+    display: flex;
+    padding-top: 100px;
+    background-image: url("../image/Capture2222.PNG");
+    background-position: top;
+    background-size: cover;
+}
+
+
+
+
+.img {
+    width: 190px;
+    position: relative;
+}
+
+.shop_section2 a {
+    text-decoration: none;
+}
+
+.box {
+    width: 160px;
+    height: 170px;
+    padding: 20px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 10px;
+    color: rgb(143, 88, 88);
+    border: 3px solid #A87676;
+    transition-duration: 0.5s;
+    animation: move 3s ease-in-out infinite;
+}
+
+.box img {
+    width: 50px;
+    height: 60px;
+    margin-left: 20px;
+}
+
+.box:hover {
+    width: 170px;
+    height: 180px;
+    background-color: #E58D9C;
+}
+
+.box h4 {
+    font-size: 20px;
+    margin: 10px;
+}
+
+.left_boxes,
+.right_boxes,
+.center_boxes {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.left_boxes {
+    margin-left: 650px;
+}
+
+/* section 3 */
+.shop_section3 {
+    padding: 20px 150px;
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    justify-content: center;
+    background-color: pink;
+    background-image: url(../image/3.jpg);
+    background-size: cover;
+}
+
+.shop_section3 h1 {
+    text-align: center;
+    color: white;
+}
+
+#carouselExampleDark,
+#carouselExampleDark img {
+    width: 500px;
+    height: 500px;
+    align-self: center;
+    border-radius: 30px;
+}
+
+/* section 4 */
+.skinCare,
+.hairCare,
+.makeup,
+.perfume,
+.shave,
+.tools {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* ثلاث منتجات فقط في كل صف */
+    gap: 30px;
+    padding: 40px 0;
+    text-align: center;
+}
+
+
+.grid-item {
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    margin: 10px;
+    box-sizing: border-box;
+    background: white;
+    border-radius: 10px;
+    color: #CB6D7F;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* section 5 */
+#shop_section5,
+#shop_section4,
+#shop_section6,
+#shop_perfume,
+#shop_section7,
+#shop_tools {
+    padding: 20px 150px;
+    color: #D43F6F;
+}
+
+.hairCare img,
+.skinCare img,
+.makeup img,
+.perfume img,
+.shave img,
+.tools img {
+    border-radius: 30px;
+    width: 180px;
+    height: 180px;
+    margin: 10px;
+}
+
+.col-md-4 div {
+    margin-bottom: 20px;
+}
+
+.add_to_cart {
+    text-decoration: none;
+    font-size: 50%;
+    color: white;
+    margin: 40px;
+    background-color: #CB6D7F;
+    border-radius: 30px;
+    padding: 15px;
+    width: 120px;
+}
+
+.add_to_cart:hover {
+    background-color: #E8CDD2;
+    color: white;
+    margin: 10px;
+}
+
+
+/* تنسيق h1 عناوين الأقسام */
+#shop_section4 h1,
+#shop_section5 h1,
+#shop_section6 h1,
+#shop_perfume h1,
+#shop_section7 h1,
+#shop_tools h1 {
+    text-align: center; /* توسيط العنوان */
+    font-family: "Playfair Display", serif; /* تغيير الخط */
+    font-size: 36px; /* حجم أكبر */
+    font-weight: bold;
+    color: #CB6D7F; /* لون متناسق مع التصميم */
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+/* responsive design */
+
+/* tablets */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .skinCare, .hairCare, .makeup, .perfume, .shave, .tools {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .add_to_cart {
+        width: 100%;
+        text-wrap: nowrap;
+    }
+}
+
+/* mobile */
+@media screen and (max-width: 767px) {
+    #shop_section4 {
+        align-items: center;
+    }
+
+    .skinCare, .hairCare, .makeup, .perfume, .shave, .tools {
+        grid-template-columns: 1fr;
+        align-items: center;
+    }
+
+    .grid-item {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .add_to_cart {
+        width: 100%;
+        text-wrap: nowrap;
+    }
+}
+
+/* section 2 responsive */
+@media screen and (max-width: 992px) {
+    .shop_section2 {
+        flex-direction: column;
+        justify-content: center;
+        padding: 10% 10% 0;
+    }
+
+    .left_boxes,
+    .center_boxes,
+    .right_boxes {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 20%;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .shop_section2 {
+        align-items: center;
+    }
+
+    .left_boxes,
+    .center_boxes,
+    .right_boxes {
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .box {
+        width: 80%;
+        margin: 0;
+        align-items: center;
+    }
+
+    .add_to_cart {
+        width: 100%;
+        text-wrap: nowrap;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .shop_section2 {
+        padding-top: 40%;
+        width: 400px;
+    }
+
+    .left_boxes,
+    .center_boxes,
+    .right_boxes {
+        width: 50%;
+        align-items: center;
+    }
+
+    .box {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .add_to_cart {
+        width: 100%;
+    }
+}

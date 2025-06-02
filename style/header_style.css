@@ -1,0 +1,218 @@
+*{
+    font-family: "Rubik", sans-serif;
+   margin: 0px;
+}
+
+.navs{
+width: 100%;
+position: fixed;
+z-index: 2;
+}
+
+.nav1 {
+
+
+    width: 100%;
+    color: white;
+    background-color: #D88090;
+    text-align: center;
+
+
+
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex2 {
+    display: flex;
+}
+
+.navs {
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+}
+
+.nav1 {
+
+
+    width: 100%;
+    color: white;
+    background-color: #D88090;
+    text-align: center;
+
+
+
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex2 {
+    display: flex;
+}
+
+.nav2 {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    font-size: 10px;
+    padding: 5px;
+    justify-content: space-between;
+
+}
+
+.nav2 .logo img {
+    width: 150px;
+    height: 80px;
+     margin-left: 20px;
+    /* margin-right: 200px; */ 
+}
+
+.nav2 .links {
+     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 500px;
+    margin-top: 5px;
+    align-self: center;
+}
+
+.nav2 .links a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+
+.nav2 .btn {
+    margin-right: 20px;
+    margin-top: 5px;
+    align-self: center;
+}
+
+.nav2 .btn a {
+    padding-right: 50px;
+     font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+
+}
+
+.nav2 a:hover {
+    color: #ce636d;
+}
+
+.nav2 .menu {
+    display: none;
+}
+
+p{
+    margin: 0px;
+    color: white;
+}
+
+.footer {
+    display: flex;
+    color: aliceblue;
+    background-color: #BF8790;
+    padding-top: 50px;
+}
+
+.footer h3:hover {
+    color: #ce636d;
+}
+
+.footer hr {
+    margin-bottom: 30px;
+}
+
+.footer .prt1 {
+    text-align: center;
+    margin-left: 30px;
+}
+
+.footer .prt1 .icons i {
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.footer .prt1 .icons i:hover {
+    color: #ce636d;
+}
+
+.footer .prt4 {
+    margin-right: 40px;
+}
+
+.footer .prt2,
+.prt3,
+.prt4 {
+    margin-left: 250px;
+}
+.footer a{
+    color: white;
+}
+
+
+@media (max-width:750px) {
+
+    .contener {
+        width: 100%;
+    }
+
+    .nav2 .links {
+        display: none;
+    }
+
+    .nav2 .btn {
+        display: none;
+
+    }
+
+    .nav2 .menu {
+        display: block;
+    }
+
+    .nav2 .menu i {
+        margin-top: 70%;
+        width: 40px;
+        font-size: 300%;
+    }
+
+
+
+.footer {
+    flex-direction: column;
+}
+
+.footer .top {
+    width: 100%;
+    padding-bottom: 20px;
+}
+.footer .top .prt2{
+    width: 40%;
+    margin: 0%;
+    margin-right: 40px;
+}
+.footer .buttom{
+    width: 100%;
+    margin-top: 30px;
+}
+.footer .buttom .prt3, .prt4{
+    margin: 0%;
+   
+}
+.footer .buttom .prt3{
+    margin-left: 40px;
+}
+.footer .buttom .prt4{
+    margin-right: 40px;}}

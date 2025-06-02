@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Card</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+  <link rel="stylesheet" href="./style/header_style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .wrapper {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: pink;
+      background-size: cover;
+    }
+
+    .card {
+      margin-top: 150px;
+      background-color: white;
+      border-radius: 20px;
+      padding: 40px 30px;
+      width: 60%;
+      height: 450px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+      position: relative;
+      text-align: center;
+    }
+
+    .card::before {
+      content: '';
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      overflow: hidden;
+      position: absolute;
+      top: -60px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-image: url('image/userr.jpg');
+      background-size: cover;
+      background-position: center;
+      border: 6px solid white;
+    }
+
+    .card .actions {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      color: #ff4e50;
+      margin-top: 10px;
+    }
+
+    .card h2 {
+      margin-top: 55px;
+      margin-bottom: 5px;
+      font-weight: 700;
+    }
+
+    .card p.location {
+      color: gray;
+      font-size: 14px;
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+
+    .card p.description {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 45px;
+      margin-top: 45px;
+    }
+
+    .stats {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 50px;
+    }
+
+    .stats div {
+      font-size: 14px;
+    }
+
+    .stats span {
+      display: block;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .btn-show {
+      /* background: linear-gradient(to right, #ff4e50, #f9d423); */
+      background: rgb(207, 147, 157);
+      color: white;
+      padding: 15px 25px;
+      border: none;
+      border-radius: 30px;
+      font-size: 15px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn-show:hover {
+      opacity: 0.9;
+    }
+    a{
+      all: unset;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="navs">
+    <div class="nav2">
+      <div class="logo">
+        <img src="./image/-removebg-preview.png" alt="">
+      </div>
+      <div class="links">
+        <a href="./home.html">HOME</a>
+        <a href="./shop.html">SHOP</a>
+        <a href="./about_us.html">ABOUT US</a>
+        <a href="./contact_us.html">CONTACT US</a>
+      </div>
+      <div class="btn">
+        <a href="./index.html"><i class="fa-solid fa-right-to-bracket"></i> </a>
+        <a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i> </a>
+      </div>
+      <div class="menu">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="wrapper">
+    <div class="card">
+      <div class="actions">
+      </div>
+       <h2 id="displayName">Welcome</h2>
+      <p class="location">Egypt</p>
+     <p class="description">Lorem ipsum dolor, sit amet consectetur <br> adipisicing elit. Nisi magnam earum tempore!</p>
+
+
+      <div class="stats">
+        <div><span>12</span>Orders</div>
+        <div><span>8</span>Favorites</div>
+        <div><span>4.5</span>Ratings</div>
+      </div>
+
+
+      <button class="btn-show"><a href="./shop.html">Start Shoping</a></button>
+    </div>
+  </div>
+
+
+  <script>
+  // جلب الاسم من localStorage
+  const displayName = localStorage.getItem("name");
+
+  // عرض الاسم في العنصر
+  document.getElementById("displayName").textContent = displayName
+    ? displayName
+    : "Guest";
+</script>
+
+</body>
+
+</html>

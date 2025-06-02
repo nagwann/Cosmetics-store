@@ -1,0 +1,338 @@
+* {
+  font-family: "Rubik", sans-serif;
+
+}
+
+.container i {
+  padding-left: 5px;
+}
+
+.container i:hover {
+  color: #ce636d;
+}
+
+.about_us {
+  height: 540px;
+  text-align: center;
+  padding: 50px 10px;
+  padding-top: 100px;
+  background-image: url(../image/summer-fashion-concept-with-woman-holding-coconut-front-eyes.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.about_us h1 {
+  margin-top: 120px;
+  font-size: 60px;
+  text-align: left;
+  color: #D88090;
+  padding-left: 20px;
+}
+
+
+.about_us p {
+  font-size: 25px;
+  margin-bottom: 50px;
+  margin-top: 10px;
+  margin-left: 20px;
+  text-align: left;
+  max-width: 50%;
+  height: 200px;
+  word-spacing: 5px;
+  color: gray;
+
+
+}
+
+.about_cards {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  padding-top: 70px;
+}
+
+.about_card {
+  width: 300px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 60px;
+  box-shadow: 0 4px 6px rgba(236, 92, 92, 0.5);
+  transition: .5s ease-in-out;
+  transform: scale(1.05);
+  margin: 20px 0px;
+}
+
+.about_card:hover {
+
+  transform: scale(1);
+  color: #9c2a41;
+}
+
+.about_card img {
+  width: 60px;
+  margin-bottom: 20px;
+}
+
+.about_card h2 {
+  font-size: 25px;
+  margin-bottom: 20px;
+  color: gray;
+}
+
+.about_card p {
+  color: gray;
+
+}
+
+.about_section2_states {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(49, 47, 47);
+
+  padding: 100px 50px;
+  margin: 50px 0px;
+  text-align: center;
+  background-image: url(../image/108034.jpeg.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.Our_team_p {
+  padding: 10px;
+  color: rgb(49, 47, 47);
+
+
+}
+
+.states {
+  margin: 20px 40px;
+  box-shadow: 0 4px 6px;
+}
+
+
+.states h2 {
+  margin: 0 2px;
+  font-size: 80px;
+}
+
+.states h2:hover {
+  color: #CE636D;
+  transition-duration: .5s;
+}
+
+
+.states p {
+  font-size: 25px;
+}
+
+
+
+
+
+.Our_team {
+  text-align: center;
+  padding: 0% 50px;
+  font-size: 50px;
+  color: #ce636d;
+}
+
+.Our_team_p {
+  text-align: center;
+  height: 50px;
+
+}
+
+.ppo {
+  width: 100%;
+}
+
+.team_section {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  margin: 40px 0;
+  margin: 0px 150px;
+
+}
+
+.team_section p {
+  width: 300px;
+  text-align: center;
+}
+
+.team_section2 {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  margin: 40px 0;
+  margin: 0px 150px;
+
+}
+
+.team_section2 p {
+  width: 300px;
+  text-align: center;
+
+}
+
+hr {
+  margin: 10px;
+}
+
+.member {
+  text-align: center;
+  margin: 1% 40px;
+
+ 
+}
+
+.member h3 {
+  color: rgb(81, 75, 75);
+  margin-top: 10px;
+}
+
+.member img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: 0 5px 6px;
+}
+
+.role {
+  color: #CE636D;
+  font-weight: bold;
+  width: 30px;
+  margin: 10px;
+}
+
+.role:hover {
+  color: rgb(243, 124, 165);
+  transition: 0.2s;
+}
+p{
+  color: darkslategray;
+}
+
+
+@media (max-width: 768px) {
+
+  .about_us h1 {
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .about_us p {
+    font-size: 17px;
+    width: 100%;
+    text-align: center;
+    margin-left: 130px;
+  }
+
+
+  .about_card {
+    width: 250px;
+    padding: 40px;
+  }
+
+  .about_card h2 {
+    font-size: 16px;
+  }
+
+  .about_card p {
+    font-size: 12px;
+  }
+
+  .about_section2_states {
+    flex-direction: column;
+    padding: 50px 20px;
+  }
+
+  .states h2 {
+    font-size: 40px;
+  }
+
+  .Our_team {
+    font-size: 30px;
+  }
+
+  .Our_team_p {
+    font-size: 15px;
+  }
+
+  .team_section,
+  .team_section2 {
+    flex-direction: column;
+  }
+
+  .team_section p {
+    font-size: medium;
+    font-weight: inherit;
+    margin-right: 50px;
+    width: 100%;
+  }
+
+  .team_section2 p {
+    font-size: medium;
+    font-weight: inherit;
+    margin-right: 50px;
+   width: 100%;
+    
+
+  }
+
+
+  .member img {
+    margin: 10px 0px;
+    width: 70px;
+    height: 70px;
+  }
+
+  .member h3 {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+
+  /* .role {
+       margin-right:100px; 
+     }   */
+}
+
+@media (max-width: 480px) {
+ 
+  .about_us h1 {
+    font-size: 25px;
+  }
+
+  .about p {
+    font-size: 14px;
+  }
+
+  .states h2 {
+    font-size: 50px;
+  }
+
+  .Our_team {
+    font-size: 30px;
+  }
+
+  .team_section p {
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+
+    /* margin-left: 100px; */
+  }
+  .team_section2 p {
+    font-size: 12px;
+    display: flex;
+    justify-content: center;}
+
+
+  .member img {
+    width: 50px;
+    height: 50px;
+  }
+}
