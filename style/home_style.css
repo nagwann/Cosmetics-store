@@ -6,6 +6,11 @@
 
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body {
     width: 100%;
     height: max-content;
@@ -470,8 +475,10 @@ p {
 
 .section5 .list {
     padding-top: 60px;
-    margin-left: 800px;
+    margin-left: auto;
+    margin-right: 0;
 }
+
 
 .section6 {
     padding-top: 30px;
