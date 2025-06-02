@@ -8,6 +8,7 @@
 
 body {
     width: 100%;
+    height: max-content;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -222,7 +223,7 @@ p {
 
 .card1:hover {
     border: 10px solid #ce636d;
-     transition: 0.5s;
+    transition: 0.5s;
 }
 
 .section2 .card1 img {
@@ -239,14 +240,9 @@ p {
 
 .card2:hover {
     border: 10px solid #ce636d;
-     transition: 0.5s;
+    transition: 0.5s;
 }
 
-
-/* .role:hover {
-  color: rgb(243, 124, 165);
-  transition: 0.2s;
-} */
 
 .section2 .card2 img {
     width: 80%;
@@ -262,7 +258,7 @@ p {
 
 .card3:hover {
     border: 10px solid #ce636d;
-     transition: 0.5s;
+    transition: 0.5s;
 }
 
 .section2 .card3 img {
@@ -341,8 +337,6 @@ p {
 }
 
 .section4 .main {
-    /* width: 100%; */
-    /* height: 320px; */
     display: flex;
     justify-content: space-between;
     background-repeat: no-repeat;
@@ -355,7 +349,6 @@ p {
 }
 
 .section4 .main .left {
-    /* width: 70%; */
     margin-left: 150px;
 }
 
@@ -384,7 +377,7 @@ p {
 }
 
 .section4 .main .right {
-    width: 200px;
+    width: 300px;
     height: 100%;
 }
 
@@ -394,20 +387,20 @@ p {
 }
 
 .section4 .main .right img {
-    width: 300px;
+    width: 350px;
     height: 300;
 }
 
 
 
 
-.title{
+.title {
     margin-top: 200px;
-    text-align: center; /* توسيط العنوان */
-    font-family: "Playfair Display", serif; /* تغيير الخط */
-    font-size: 36px; /* حجم أكبر */
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-size: 36px;
     font-weight: bold;
-    color: #CB6D7F; /* لون متناسق مع التصميم */
+    color: #CB6D7F;
     margin-bottom: 30px;
 }
 
@@ -439,12 +432,12 @@ p {
     margin: 10px;
 }
 
-.best-selers h5{
+.best-selers h5 {
     margin-bottom: 10px;
     margin-top: 5px;
 }
 
-.add_to_cart { 
+.add_to_cart {
     text-decoration: none;
     font-size: 50%;
     color: white;
@@ -461,16 +454,6 @@ p {
     color: white;
     margin: 10px;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -509,12 +492,11 @@ body {
 .slider-container {
     position: relative;
     width: 90%;
-    /* 200px * 5 صور */
     overflow: hidden;
     margin: auto;
     border-radius: 10px;
     background: white;
-    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+
 }
 
 .slider-track {
@@ -529,17 +511,14 @@ body {
     flex-shrink: 0;
     margin-right: 100px;
     transition: transform 0.3s ease;
-    /* لتفعيل الحركة السلسة */
     border-radius: 5px;
 }
 
 .slider-track img:hover {
     transform: scale(1.1);
-    /* زوم 110% */
     z-index: 5;
-    /* يخلي الصورة فوق الباقي */
     cursor: pointer;
-    /* شكل المؤشر */
+
 }
 
 
@@ -627,7 +606,20 @@ body {
 }
 
 
-@media (max-width:750px) {
+.footer a {
+    color: white;
+}
+
+
+
+
+
+
+
+@media (max-width:820px) {
+
+
+
     .contener {
         width: 100%;
     }
@@ -724,7 +716,12 @@ body {
         align-self: last baseline;
     }
 
+    .section4 {
+        overflow: hidden;
+    }
+
     .section4 .main {
+
         width: 100%;
         flex-direction: column;
         flex-wrap: wrap;
@@ -732,6 +729,7 @@ body {
         margin-left: 10%;
         margin-right: 10%;
     }
+
 
     .section4 .left {
         width: 100%;
@@ -743,10 +741,15 @@ body {
     }
 
     .section4 .right img {
-        float: inline-end;
+        width: 500px;
+    }
+
+    .best-selers {
+        flex-direction: column;
     }
 
     .section5 {
+    overflow: hidden;
         width: 80%;
         margin: 0%;
         margin-left: 10%;
@@ -791,6 +794,7 @@ body {
     }
 
     .footer {
+      overflow: hidden;
         flex-direction: column;
     }
 
@@ -821,10 +825,10 @@ body {
     }
 
     .footer .buttom .prt4 {
-        margin-right: 40px;
+        margin-right: 250px;
     }
 }
 
-.footer a {
-    color: white;
-}
+
+
+@media (max-width:550px) {}
